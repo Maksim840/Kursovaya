@@ -1,0 +1,280 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,700&family=Playfair+Display:ital@0;1&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 10px 120px 0 120px;
+  background-color: #edfafd;
+}
+
+.header-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 3px solid black;
+}
+
+.header-container .header_logo {
+  position: relative;
+  left: 10px;
+  background-image: url("/png/logo.png");
+  width: 75px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-container .navigation_panel {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 10px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-container .navigation_panel .nav_element {
+  margin: 0 10px 0 10px;
+  font-size: 30px;
+}
+
+.header-container .navigation_panel .nav_element .link_nav {
+  text-decoration: none;
+  color: black;
+}
+
+.main_container_first_page.active {
+  display: block;
+}
+
+.main_container_first_page.disable {
+  display: none;
+}
+
+.main_container_first_page .main_header .main_header_h1 {
+  font-size: 60px;
+  font-family: 'Cabin', sans-serif;
+  font-family: 'Playfair Display', serif;
+}
+
+.main_container_first_page .main_section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 22% 78%;
+      grid-template-columns: 22% 78%;
+}
+
+.main_container_first_page .main_section .main_aside {
+  border: 3px solid black;
+  background-color: #87c9ff;
+}
+
+.main_container_first_page .main_section .main_aside .main_aside_dl .main_aside_dt {
+  padding: 15px 0 15px 15px;
+  margin: 10px 10px 10px 10px;
+  background-color: #dff5fd;
+  border: 1px solid #b9cff8;
+}
+
+.main_container_first_page .main_section .main_aside .main_aside_dl .main_aside_dt .main_aside_dt_link {
+  font-weight: bold;
+  color: black;
+  display: block;
+  text-decoration: none;
+  font-size: 28px;
+  font-family: 'Cabin', sans-serif;
+  font-family: 'Playfair Display', serif;
+  word-wrap: break-word;
+}
+
+.main_container_first_page .main_section .main_article {
+  border: 3px solid black;
+  background-color: #b6ebfc;
+  margin-left: 30px;
+}
+
+.main_container_first_page .main_section .main_article .main_article_dl {
+  margin-bottom: 40px;
+}
+
+.main_container_first_page .main_section .main_article .main_article_dd_header {
+  padding: 15px 0 15px 15px;
+  margin: 10px 10px 10px 10px;
+  background-color: #dff5fd;
+  border: 1px solid #4182fa;
+}
+
+.main_container_first_page .main_section .main_article .main_article_dd_header .main_article_dd_link {
+  font-weight: bold;
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-size: 34px;
+  font-family: 'Cabin', sans-serif;
+  font-family: 'Playfair Display', serif;
+  word-wrap: break-word;
+}
+
+.main_container_first_page .main_section .main_article .main_article_dd {
+  padding-left: 15px;
+  margin: 10px 10px 10px 10px;
+  list-style-type: square;
+}
+
+.main_container_first_page .main_section .main_article .main_article_dd :before {
+  content: "• ";
+  font-size: 35px;
+}
+
+.main_container_first_page .main_section .main_article .main_article_dd .main_article_dd_link {
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: 'Cabin', sans-serif;
+  font-family: 'Playfair Display', serif;
+  word-wrap: break-word;
+}
+
+.main_container_second_page {
+  display: none;
+  padding-bottom: 70px;
+  border: 2px solid #606060;
+}
+
+.main_container_second_page.active {
+  display: block;
+}
+
+.main_container_second_page .h1 {
+  font-family: 'Arial';
+  font-size: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main_container_second_page .info {
+  font-family: 'Georgia';
+  font-size: 35px;
+  padding: 10px;
+  background: #b6dbfb;
+  margin: 70px 100px;
+  border-radius: 20px;
+}
+
+.main_container_second_page .div_image_info {
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main_container_second_page .div_image_info img {
+  width: 40%;
+}
+
+.footer_container {
+  background-color: #222222;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+}
+
+.footer_container .footer_left_side .footer_left_side_info {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  padding: 40px 0 40px 160px;
+}
+
+.footer_container .footer_left_side .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0 0 160px;
+}
+
+.footer_container .footer_left_side .email .logo_email {
+  background-image: url("/png/mail.png");
+  width: 47px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer_container .footer_left_side .email .email_info {
+  padding-left: 25px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.footer_container .footer_left_side .email .email_info .link {
+  text-decoration: none;
+  color: white;
+}
+
+.footer_container .footer_left_side .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0 0 160px;
+}
+
+.footer_container .footer_left_side .phone .logo_phone {
+  background-image: url("/png/phone.png");
+  width: 45px;
+  height: 33px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer_container .footer_left_side .phone .phone_info {
+  padding-left: 25px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.footer_container .footer_left_side .phone .phone_info .link {
+  text-decoration: none;
+  color: white;
+}
+
+.footer_container .footer_right_side .footer_nav .footer_nav_dl .footer_nav_dd {
+  margin: 30px 0px 30px 60px;
+}
+
+.footer_container .footer_right_side .footer_nav .footer_nav_dl .footer_nav_dd .footer_nav_dd_link {
+  text-decoration: none;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+}
+/*# sourceMappingURL=sass.css.map */
