@@ -170,15 +170,19 @@ body {
     }
     padding-bottom: 70px;
     border: 2px solid rgb(96, 96, 96);
-    
+    .sec {
+        display: flex;
+        flex-direction: column-reverse;
         .h1 {
+            order: 1;
             font-family: 'Arial';
             font-size: 50px;
-            display: flex;
-            justify-content: center;
+            width: 100%;
+            text-align: center;
         }
     
         .info {
+            order: 2;
             font-family: 'Georgia';
             font-size: 35px;
             padding: 10px;
@@ -188,6 +192,7 @@ body {
         }
 
         .div_image_info {
+            order: 3;
             padding-bottom: 50px;
             display: flex;
             justify-content: center;
@@ -195,8 +200,29 @@ body {
                 width: 40%;
             }
         }
+    }
+        
 
-
+        .div_button {
+            order: 4;
+                display: flex;
+                justify-content: center;
+            
+            
+            .button_back {
+                background:rgb(140, 174, 255);
+                width: 130px;
+                height: 50px;
+                border-radius: 30px;
+                font-size: 30px;
+                
+                &:hover {
+                    background: rgb(160, 189, 255);
+                    transition: 0.5s;
+                }
+            }
+            
+        }
 
     
 }

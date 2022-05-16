@@ -28,37 +28,41 @@ if (menuLinks.length > 0) {
 const mainContainer = document.querySelector('.main_container_first_page'),
       mainContainerSecond = document.querySelector('.main_container_second_page'),
       linknNav = document.querySelector('.link_nav'),
-      elLinks = document.querySelectorAll('.main_article_dd')
-
+      elLinks = document.querySelectorAll('.main_article_dd'),
+      button = document.querySelector('.div_button'),
+      ewf = document.querySelector('.sec')
 
 let mainDiv = document.createElement('div')
 
+
 for (let i = 0; i < elLinks.length; i++) {
-  elLinks[i].addEventListener('click', function() {
+  elLinks[i].addEventListener('click', function(e) {
+    e.preventDefault()
     mainContainer.classList.toggle('disable')
     mainDiv.innerHTML = pages[i]
     mainContainerSecond.classList.toggle('active')
-    mainContainerSecond.append(mainDiv)
+    //button.classList.toggle('active')
+    ewf.append(mainDiv)
+    //window.history.pushState("page2", "Title", `${i}`)
   })
-  
 }
-
 
 
 linknNav.addEventListener('click', showContent)
-
-function showContent () {
+button.addEventListener('click', showContent)
+function showContent() {
   mainContainer.classList.remove('disable')
   mainContainerSecond.classList .remove('active')
+  //button.classList .remove('active')
 }
 
+addEventListener('popstate', showContent)
 
 
 
 
 
-
-
+  
 
 
 

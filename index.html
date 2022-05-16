@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/sass.css">
-    <title>Document</title>
+    <title>Geometry</title>
 </head>
 
 <body>
@@ -14,13 +14,13 @@
         <div class="header_logo"></div>
         <nav class="navigation_panel">
             <div class="nav_element">
-                <a href="#" class="link_nav">Главная</a>
+                <a  data-goto="#welcome" href="" class="link_nav main_aside_dt_link">Главная</a>
             </div>
-            <div class="nav_element">
-                <a href="#" class="link_nav">Темы</a>
+            <div class="nav_element main_aside_dt_link">
+                <a data-goto=".main_section" href="#welcome" class="link_nav">Темы</a>
             </div>
-            <div class="nav_element">
-                <a href="#" class="link_nav">О нас</a>
+            <div class="nav_element main_aside_dt_link">
+                <a data-goto=".footer_container" href="" class="link_nav">О нас</a>
             </div>
         </nav>
     </header>
@@ -29,61 +29,66 @@
 
     <main class="main_container_first_page ">
         <div class="main_header">
-            <h1 class="main_header_h1">
+            <h1 class="main_header_h1" id="welcome">
                 Welcome to our educational portal!
             </h1>
         </div>
         <section class="main_section">
             <aside class="main_aside">
                 <dl class="main_aside_dl">
-                    <dt class="main_aside_dt "><a data-goto="#coord" href="#coord" class="main_aside_dt_link">Метод координат</a></dt>
-                    <dt class="main_aside_dt"><a data-goto="#sootn_first_part" href="#" class="main_aside_dt_link">Соотношения между сторонами и углами треугольника. Раздел 1. Синус, косинус и тангенс угла</a></dt>
-                    <dt class="main_aside_dt"><a data-goto="#sootn_second_part" href="#" class="main_aside_dt_link">Соотношения между сторонами и углами треугольника. Раздел 2. Соотношения между сторонами и углами треугольника.</a></dt>
-                    <dt class="main_aside_dt"><a data-goto="#length" href="#" class="main_aside_dt_link">Длина окружности и площадь круга</a></dt>
+                    <dt class="main_aside_dt "><a data-goto="#coord" href="" class="main_aside_dt_link">Метод координат</a></dt>
+                    <dt class="main_aside_dt"><a data-goto="#sootn_first_part" href="" class="main_aside_dt_link">Соотношения между сторонами и углами треугольника. Раздел 1. Синус, косинус и тангенс угла</a></dt>
+                    <dt class="main_aside_dt"><a data-goto="#sootn_second_part" href="" class="main_aside_dt_link">Соотношения между сторонами и углами треугольника. Раздел 2. Соотношения между сторонами и углами треугольника.</a></dt>
+                    <dt class="main_aside_dt"><a data-goto="#length" href="" class="main_aside_dt_link">Длина окружности и площадь круга</a></dt>
                 </dl>
             </aside>
 
             <article class="main_article">
                 <dl class="main_article_dl">
-                    <dd class="main_article_dd_header" id="coord"><a href="#" class="main_article_dd_link">Метод координат</a></dd>
-                    <dd class="main_article_dd"><a href="#" class="main_article_dd_link" id="vectors">Векторы</a></dd>
-                    <dd class="main_article_dd"><a href="#" class="main_article_dd_link">Сложение и вычитание векторов. Умножение вектора на число в координатах</a></dd>
-                    <dd class="main_article_dd"><a href="#" class="main_article_dd_link">Уравнение окружности</a></dd>
-                    <dd class="main_article_dd"><a href="#" class="main_article_dd_link">Уравнение прямой</a></dd>
+                    <dd class="main_article_dd_header" id="coord"><a href=" " class="main_article_dd_link">Метод координат</a></dd>
+                    <dd class="main_article_dd"><a href="" class="main_article_dd_link" id="vectors">Векторы</a></dd>
+                    <dd class="main_article_dd"><a href=" " class="main_article_dd_link">Сложение и вычитание векторов. Умножение вектора на число в координатах</a></dd>
+                    <dd class="main_article_dd"><a href=" " class="main_article_dd_link">Уравнение окружности</a></dd>
+                    <dd class="main_article_dd"><a href=" " class="main_article_dd_link">Уравнение прямой</a></dd>
                 </dl>
 
                 <dl class="main_article_dl">
-                    <dd class="main_article_dd_header" id="sootn_first_part"><a href="#" class="main_article_dd_link">Соотношения между сторонами и углами треугольника. Раздел 1. Синус, косинус и тангенс угла</a></dd>
-                    <dd class="main_article_dd"><a href="#" class="main_article_dd_link">Синус, косинус и тангенс угла. Основное тригонометрическое тождество</a></dd>
+                    <dd class="main_article_dd_header" id="sootn_first_part"><a href=" " class="main_article_dd_link">Соотношения между сторонами и углами треугольника. Раздел 1. Синус, косинус и тангенс угла</a></dd>
+                    <dd class="main_article_dd"><a href=" " class="main_article_dd_link">Синус, косинус и тангенс угла. Основное тригонометрическое тождество</a></dd>
                 </dl>
 
                 <dl class="main_article_dl">
-                    <dd class="main_article_dd_header" id="sootn_second_part"><a href="#" class="main_article_dd_link">Соотношения между сторонами и углами треугольника. Раздел 2. Соотношения между сторонами и углами треугольника.</a></dd>
-                    <dd class="main_article_dd"><a href="#" class="main_article_dd_link">Теорема о площади треугольника. Формулы для нахождения площадей параллелограмма и треугольника</a></dd>
-                    <dd class="main_article_dd"><a href="#" class="main_article_dd_link">Теорема синусов </a></dd>
-                    <dd class="main_article_dd"><a href="#" class="main_article_dd_link">Теорема косинусов </a></dd>
+                    <dd class="main_article_dd_header" id="sootn_second_part"><a href=" " class="main_article_dd_link">Соотношения между сторонами и углами треугольника. Раздел 2. Соотношения между сторонами и углами треугольника.</a></dd>
+                    <dd class="main_article_dd"><a href=" " class="main_article_dd_link">Теорема о площади треугольника. Формулы для нахождения площадей параллелограмма и треугольника</a></dd>
+                    <dd class="main_article_dd"><a href=" " class="main_article_dd_link">Теорема синусов </a></dd>
+                    <dd class="main_article_dd"><a href=" " class="main_article_dd_link">Теорема косинусов </a></dd>
                 </dl>
 
                 <dl class="main_article_dl">
-                    <dd class="main_article_dd_header" id="length"><a href="#" name="linkt" class="main_article_dd_link">Длина окружности и площадь круга</a></dd>
-                    <dd class="main_article_dd"><a href="#" class="main_article_dd_link">Правильный многоугольник</a></dd>
-                    <dd class="main_article_dd"><a href="#" class="main_article_dd_link">Окружность, описанная около правильного многоугольника</a></dd>
-                    <dd class="main_article_dd"><a href="#" class="main_article_dd_link">Окружность, вписанная в правильный многоугольник</a></dd>
-                    <dd class="main_article_dd"><a href="#" class="main_article_dd_link">Длина окружности</a></dd>
-                    <dd class="main_article_dd"><a href="#" class="main_article_dd_link">Площадь круга</a></dd>
+                    <dd class="main_article_dd_header" id="length"><a href=" " name="linkt" class="main_article_dd_link">Длина окружности и площадь круга</a></dd>
+                    <dd class="main_article_dd"><a href=" " class="main_article_dd_link">Правильный многоугольник</a></dd>
+                    <dd class="main_article_dd"><a href=" " class="main_article_dd_link">Окружность, описанная около правильного многоугольника</a></dd>
+                    <dd class="main_article_dd"><a href=" " class="main_article_dd_link">Окружность, вписанная в правильный многоугольник</a></dd>
+                    <dd class="main_article_dd"><a href=" " class="main_article_dd_link">Длина окружности</a></dd>
+                    <dd class="main_article_dd"><a href=" " class="main_article_dd_link">Площадь круга</a></dd>
                 </dl>
             </article>
-
         </section>
-    </main>
-
-    <!--Вектора -->
-
-    <main class="main_container_second_page" id="vectors" >
         
     </main>
+    
+    
+    <!--Вектора -->
 
-   
+    <main class="main_container_second_page" id="vectors"  >
+       <div class="sec"><div> 
+
+        <div class="div_button">
+            <button class="button_back" onclick="showC"> Назад </button>
+        </div>
+    </main>
+
+    
     <!--Footer -->
 
     <footer class="footer_container">
@@ -108,9 +113,9 @@
         <div class="footer_right_side">
             <div class="footer_nav">
                 <dl class="footer_nav_dl">
-                    <dd class="footer_nav_dd"><a href="#" class="footer_nav_dd_link">Главная</a></dd>
-                    <dd class="footer_nav_dd"><a href="#" class="footer_nav_dd_link">Темы</a></dd>
-                    <dd class="footer_nav_dd"><a href="#" class="footer_nav_dd_link">О нас</a></dd>
+                    <dd class="footer_nav_dd"><a data-goto=".header-container" href=" " class="footer_nav_dd_link main_aside_dt_link">Главная</a></dd>
+                    <dd class="footer_nav_dd"><a data-goto=".main_section" href=" " class="footer_nav_dd_link main_aside_dt_link">Темы</a></dd>
+                    <dd class="footer_nav_dd"><a href=" " class="footer_nav_dd_link main_aside_dt_link">О нас</a></dd>
                 </dl>
             </div>
         </div>
